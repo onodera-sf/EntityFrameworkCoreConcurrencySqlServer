@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+		<Description>オプティミスティック同時実行制御を行うことによって複数アクセスによる更新で後勝ちによるデータ損失を防ぐサンプルです。</Description>
+		<Company>ソーサリーフォース (https://sorceryforce.net/)</Company>
+		<Authors>ソーサリーフォース (おのでら)</Authors>
+		<Copyright>Copyright (C) 2024-2024 ソーサリーフォース (おのでら)</Copyright>
+	</PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
